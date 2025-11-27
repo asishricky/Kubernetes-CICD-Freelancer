@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/proposals")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin("*")
 public class ProposalController {
     private final ProposalService proposalService;
     public ProposalController(ProposalService proposalService) {
